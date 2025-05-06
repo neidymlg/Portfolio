@@ -1,0 +1,84 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contact-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-description {
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.github-logo {
+    width: 200px;
+    height: 200px;
+}
+
+.linkedin-logo {
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 768px) {
+    .contact-title {
+      font-size: 1.8em;
+    }
+  
+    .contact-description {
+      font-size: 1.05em;
+      padding: 0 10px;
+    }
+  
+    .contact-logo {
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+  
+    .github-logo,
+    .linkedin-logo {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-title {
+      font-size: 1.5em;
+    }
+  
+    .contact-description {
+      font-size: 1em;
+      padding: 0 10px;
+    }
+  
+    .contact-logo {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .github-logo,
+    .linkedin-logo {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  

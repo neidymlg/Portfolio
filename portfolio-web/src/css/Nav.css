@@ -1,0 +1,95 @@
+nav {
+  background-color: #aaf0d1;
+  font-family: 'Copperplate Gothic Light';
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  text-decoration: none;
+  background: linear-gradient(45deg,
+  #364dc3, 
+  #6467c4,
+  #f7d9a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.nav-links a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #333;
+  font-size: x-large;
+  transition: color 1s ease-in;
+}
+
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .nav-logo {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .nav-links a {
+    margin: 10px;
+    font-size: large;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  nav {
+    padding: 40px 80px;
+  }
+
+  .nav-logo {
+    font-size: 2.5rem;
+  }
+
+  .nav-links a {
+    font-size: 1.8rem;
+    margin-left: 32px;
+  }
+}

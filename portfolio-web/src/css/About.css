@@ -1,0 +1,137 @@
+.about-container {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #f4f4f4, #e8e8e8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .about-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .about-description span {
+    font-weight: bold;
+    color: #364dc3; 
+  }
+  
+  .about-skill-list {
+    background: #f7d9a5;
+    color: black;
+    padding: 0;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .about-skill-list li {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-skill-list li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .resume-image {
+    display: block;
+    width: 600px;
+    height: 700px;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume-image:hover {
+    animation: shake 0.5s;
+  }
+  
+  
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px 10px;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .about-skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .about-skill-list li {
+    font-size: 1rem;
+    padding: 8px 12px;
+    flex: 1 1 40%;
+    max-width: 45%;
+  }
+
+  .resume-image {
+    width: 90%;
+    height: auto;
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .about-skill-list li {
+    font-size: 0.95rem;
+    padding: 6px 10px;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .resume-image {
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+  }
+}

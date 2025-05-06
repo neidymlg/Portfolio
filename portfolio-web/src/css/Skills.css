@@ -1,0 +1,117 @@
+.skills-container {
+  padding: 40px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.skills-item {
+  display: inline-block;
+  background-color: #6467c4;
+  color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: bounceIn 0.8s ease forwards;
+  opacity: 0;
+  text-align: left;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-item:nth-child(1) { animation-delay: 0.1s; }
+.skills-item:nth-child(2) { animation-delay: 0.2s; }
+.skills-item:nth-child(3) { animation-delay: 0.3s; }
+.skills-item:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes bounceIn {
+  0%   { transform: scale(0.5); opacity: 0; }
+  60%  { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.skills-item:active {
+  transform: scale(2.0);
+  background-color: #aaf0d1;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skills-description {
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #f7d9a5, #6467c4, #12f08c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: shimmer 5s ease infinite;
+
+  text-align: center;
+  margin: 40px auto 20px;
+  max-width: 90%;
+}
+
+@keyframes shimmer {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* Tablet and small screens */
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 30px;
+  }
+
+  .skills-grid {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .skills-item {
+    padding: 20px 30px;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .skills-container {
+    padding: 20px;
+  }
+
+  .skills-item {
+    padding: 15px 20px;
+    font-size: 0.95rem;
+  }
+
+  .skills-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .skills-container {
+    padding: 60px 80px;
+  }
+
+  .skills-item {
+    padding: 40px 60px;
+    font-size: 1.4rem;
+  }
+
+  .skills-grid {
+    gap: 30px;
+  }
+
+  .skills-description {
+    font-size: 2.1rem;
+  }
+}
