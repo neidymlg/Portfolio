@@ -10,7 +10,7 @@ Before you begin, ensure you have the following installed on your machine:
 
 ## Getting Started
 
-1. **Clone the repository:**
+1. **Clone the repository**
 
 2. **Install dependencies**
 
