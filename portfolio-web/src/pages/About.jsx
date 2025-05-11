@@ -1,4 +1,3 @@
-import React from 'react';
 import '../css/About.css';
 import resume from '../assets/Neidy_Malaga\'s_Resume.jpg';
 

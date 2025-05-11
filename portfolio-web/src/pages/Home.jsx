@@ -1,4 +1,3 @@
-import React from 'react';
 import '../css/Home.css';
 import profile from '../assets/Portfolio_Pic.jpg'; // Adjust the path as necessary 
 

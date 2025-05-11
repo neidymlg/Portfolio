@@ -1,11 +1,9 @@
-import React from 'react';
 import '../css/Skills.css';
 
 const Skills = () => {
     return (
         <div className="skills-container">
         <title>My Skills</title>
-            <h1 className="skills-title">Skills</h1>
             <p className="skills-description">Technical Skills</p>
             <div className="skills-grid">
                 <div className="skills-item">Python</div>

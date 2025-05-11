@@ -1,4 +1,3 @@
-import React from "react";
 import "../css/Contact.css";
 import github_logo from "../assets/Github_Logo.png";
 import linkedin_logo from "../assets/LinkedIn_Logo.jpg";
