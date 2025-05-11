@@ -14,10 +14,10 @@ Before you begin, ensure you have the following installed on your machine:
 
 2. **Install dependencies**
 
-npm install
+        npm install
 
 3. **Start the development server**
 
-npm start
+        npm start
 
     
